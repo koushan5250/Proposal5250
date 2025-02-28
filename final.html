@@ -17,8 +17,18 @@
     </div>
 
     <!-- Background Music (Auto Play) -->
-    <audio autoplay loop>
+    <audio id="bgMusic" loop>
         <source src="shimmer-of-sindhu.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+        // Auto-play music after user interaction
+        document.addEventListener("click", function() {
+            let music = document.getElementById("bgMusic");
+            if (music.paused) {
+                music.play();
+            }
+        });
+    </script>
 </body>
 </html>
