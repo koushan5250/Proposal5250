@@ -8,12 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Can I call you sweetheart? 🥺</h1>
-        <button onclick="correctAnswer()">Haan, tum keh sakte ho</button>
-        <button onclick="wrongAnswer()">Nahi, bilkul nahi</button>
-        <br><br>
-        <button onclick="goToNextPage('page5.html')">Next</button> 
+        <h1>Can I call you sweetheart? 😍</h1>
+        <button onclick="nextPage()">Haan</button>
+        <button onclick="nextPage()">Nahi</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page5.html";
+        }
+    </script>
 </body>
 </html>
