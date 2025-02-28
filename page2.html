@@ -9,11 +9,14 @@
 <body>
     <div class="container">
         <h1>Mishtu, kya tum mujhse pyar karti ho as a friend...? ❤️</h1>
-        <button onclick="correctAnswer()">Haan</button>
-        <button onclick="wrongAnswer()">Nahi</button>
-        <br><br>
-        <button onclick="goToNextPage('page3.html')">Next</button> 
+        <button onclick="nextPage()">Haan</button>
+        <button onclick="nextPage()">Nahi</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page3.html";
+        }
+    </script>
 </body>
 </html>
