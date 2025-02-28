@@ -9,11 +9,14 @@
 <body>
     <div class="container">
         <h1>Aapke dil mein mere liye koi feelings hain...? 💖</h1>
-        <button onclick="correctAnswer()">Haan, thodi si</button>
-        <button onclick="wrongAnswer()">Nahi, bilkul bhi nahi</button>
-        <br><br>
-        <button onclick="goToNextPage('page4.html')">Next</button> 
+        <button onclick="nextPage()">Haan</button>
+        <button onclick="nextPage()">Nahi</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page4.html";
+        }
+    </script>
 </body>
 </html>
