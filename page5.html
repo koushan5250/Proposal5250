@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game On - Question 4</title>
+    <title>Game On - Question 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Tumhara favourite color kaunsa hai? 🎨</h1>
-        <button onclick="correctAnswer()">Black</button>
-        <button onclick="wrongAnswer()">Red</button>
-        <br><br>
-        <button onclick="goToNextPage('final.html')">Next</button> 
+        <h1>What’s my favorite color? 🎨</h1>
+        <button onclick="goToFinalPage()">Black 🖤</button>
+        <button onclick="goToFinalPage()">Red ❤️</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function goToFinalPage() {
+            window.location.href = "final.html"; // Final proposal page pe redirect
+        }
+    </script>
 </body>
 </html>
